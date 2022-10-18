@@ -1,0 +1,8 @@
+.ProductCard {
+  border: solid 1px hotpink;
+  width: 30%;
+}
+
+.ProductCard .cart-title {
+  overflow-wrap: break-word;
+}

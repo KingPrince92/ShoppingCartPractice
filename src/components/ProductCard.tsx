@@ -7,8 +7,8 @@ interface Props {
 const ProductCard = ({ item }: Props) => {
   return (
     <li className="ProductCard">
-      <p>{item.title}</p>
-      <img src={item.image} />
+      <p className="card-title">{item.title}</p>
+      <img className="product-image" src={item.image} />
     </li>
   );
 };
