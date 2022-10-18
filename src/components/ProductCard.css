@@ -6,3 +6,8 @@
 .ProductCard .cart-title {
   overflow-wrap: break-word;
 }
+
+.ProductCard .cart-operations img {
+  height: 30px;
+  width: 30px;
+}

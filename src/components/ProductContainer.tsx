@@ -11,12 +11,12 @@ const ProductContainer = () => {
     getAllProducts().then((response) => {
       setProducts(response);
     });
-  });
+  }, []);
 
   return (
     <ul className="ProductContainer">
       {products.map((item) => (
-        <ProductCard item={item} />
+        <ProductCard item={item} key={item.id} />
       ))}
     </ul>
   );

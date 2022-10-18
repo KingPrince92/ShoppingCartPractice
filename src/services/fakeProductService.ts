@@ -8,7 +8,7 @@ const getAllProducts = async (): Promise<StoreItem[]> => {
 };
 
 const getSingleProduct = async (id: number): Promise<StoreItem> => {
-  return (await axios.get(`${baseURL}${encodeURIComponent(id)}`)).data;
+  return (await axios.get(`${baseURL}/${encodeURIComponent(id)}`)).data;
 };
 
 export { getAllProducts, getSingleProduct };
